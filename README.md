@@ -8,5 +8,5 @@ Pytorch ImageNet training baseline code with horovod for DDP (Distributed Data P
 
 ## Training
 ```bash
-horovodrun -np 8 python3 horo.py -a resnet50 --distributed /dataset/ImageNet
+horovodrun -np 8 python3 main.py -a resnet50 --distributed /dataset/ImageNet
 ```
