@@ -79,8 +79,9 @@ def run(args):
     if hvd.rank() == 0:
         current_time = datetime.now().strftime('%b%d_%H-%M-%S')
         log_dir = os.path.join(f'runs/{current_time}')
-        os.mkdir(log_dir, exist_ok=True)
+        os.makedirs(log_dir, exist_ok=True)
         run = wandb.init(project=args.project, name=current_time, dir=log_dir)
+        run.config.update(args)
     else:
         run = None
 
