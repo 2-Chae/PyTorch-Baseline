@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=0 python3 main.py --epochs 1
+CUDA_VISIBLE_DEVICES=4,5,6,7 horovodrun -np 4 python3 horo.py -a resnet50 --distributed /dataset/tiny
