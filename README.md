@@ -1,4 +1,4 @@
-# Pytorch Baseline Code
+# Pytorch Baseline Code with horovod
 Pytorch ImageNet training baseline code with horovod for DDP (Distributed Data Parallel) and Wandb.
 
 ## Requirements
